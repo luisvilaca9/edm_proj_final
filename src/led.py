@@ -2,7 +2,7 @@ from machine import Pin
 from utime import ticks_ms
 
 class Led():
-    def __init__(self, pin, active_high = True):
+    def __init__(self, pin, active_high=True):
         self.active_high = active_high
         self.led = Pin(pin, Pin.OUT)
         self.state(False)
