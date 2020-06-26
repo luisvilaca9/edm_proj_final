@@ -87,7 +87,7 @@ def beach():
     if count >= 4 and count < 7:
         red.state(True)
     elif count >= 7 and count < 10:
-        print("Press the left button to terminate intermitent mode")
+        print("Press the left button to terminate intermitent mode.")
         while True:
             yellow.blink(500)
             if bleft.state() == 1:
@@ -160,12 +160,13 @@ def info():
     client.publish('Info', message)
 
 def sub_cb(topic, message):
-    print("Received MQTT message: topic '{0}', message '{1}'".format(topic.decode("utf-8"), message.decode("utf-8")))
+    print("Received MQTT message: topic '{0}', message '{1}'.".format(topic.decode("utf-8"), message.decode("utf-8")))
     topic = topic.decode("utf-8")
     global location
     if topic == 'City':
         location = message.decode("utf-8")
         print("Selected Location: {0}." .format(location))
+        print("See weather info of {0} on the Broker Client." .format(location))
         info()
 
     if topic == 'Mode':
@@ -202,7 +203,7 @@ def loop():
         global mode
         if bright.state() == 1:
             leds_off()
-            print('Programa Interrompido por Botão Direito')
+            print('Program interrupted by Right Button')
             sys.exit()
 
     except OSError:
@@ -213,5 +214,5 @@ try:
         loop()
 except KeyboardInterrupt: 
     leds_off()
-    print('Programa Interrompido por Ctrl-C')
+    print('Program Interrupted by Ctrl-C')
     sys.exit()
