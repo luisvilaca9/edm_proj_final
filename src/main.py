@@ -47,7 +47,7 @@ def prettify(s):
             print((i-1)*' ', end='')
         else:
             print(c, end='')
-            print("")
+    print("")
 
 def clock_api():
     url = "http://worldtimeapi.org/api/ip"
@@ -69,8 +69,8 @@ def time():
     leds_off()
     r = weather_api()
     t = clock_api()
-    local_now = t['unixtime'] + r['timezone'] - 3600  
-    if (local_now >= int(r["sys"]["sunrise"]) and local_now < int(r["sys"]["sunset"])):
+    utc_time = t['unixtime'] - t['dst_offset']   
+    if (utc_time >= int(r["sys"]["sunrise"]) and utc_time < int(r["sys"]["sunset"])):
         green.state(True)
     else:
         yellow.state(True)
