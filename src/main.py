@@ -87,12 +87,13 @@ def beach():
     if count >= 4 and count < 7:
         red.state(True)
     elif count >= 7 and count < 10:
-        print("Press the right button to terminate intermitent mode")
-        while True():
+        print("Press the left button to terminate intermitent mode")
+        while True:
             yellow.blink(500)
-            if bright.state() == 1:
+            if bleft.state() == 1:
                 break
-    elif count <= 10 and count < 13:
+                
+    elif count >= 10 and count < 13:
         yellow.state(True)
     else:
         green.state(True)
