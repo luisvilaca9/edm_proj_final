@@ -12,7 +12,7 @@ Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 * IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  
 
 ### **Utilização geral do programa**
-Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, deverá ter acesso a todos os códigos desenvolividos ao longo do projeto.  
+Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, deverá ter acesso a todos os códigos desenvolvidos ao longo do projeto.  
 <strong>Nota:</strong> Antes de correr os programas deverá ter o cuidado de alterar o SSID e a password, no ficheiro Secrets.py, consoante a rede wi-fi que estiver a utilizar e ter ainda o cuidado de selecionar a porta COM adequada a qual a sua placa ESP32 estará conetada, no ficheiro pymakr.conf.
 
 De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
