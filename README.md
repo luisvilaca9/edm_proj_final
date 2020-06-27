@@ -16,5 +16,9 @@ Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Stu
 <strong>Nota:</strong> Antes de correr os programas deverá ter o cuidado de alterar o SSID e a password, no ficheiro Secrets.py, consoante a rede wi-fi que estiver a utilizar e ter ainda o cuidado de selecionar a porta COM adequada a qual a sua placa ESP32 estará conetada, no ficheiro pymakr.conf.
 
 De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
-Ao abrir esse programa deverá colocoar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='passwd'
+Ao abrir esse programa deverá colocoar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível se conetar ao broker.
+De seguida, no Subscrive escreve-se Info no espaço a branco antes do subscrive e depois carrega-se no botão localizado à frente no Subscrive.
+Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard,e escreve-se City. Repete-se o mesmo procedimento para o mode.
+
+
   
