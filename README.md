@@ -30,8 +30,11 @@ Na página do Publish deve obter o seguinte:
 
 ### <strong>Execução prática dos modos</strong>
 #### <strong>mode City</strong>
-Para se visualizar a informação relativa à meteorologia numa determinada cidade tem que se selecional City, escrever City, escrever o nome da cidade no notepad e depois fazer Publish.
-Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel.
-Agora será mostrado um exemplo do procedimento a seguir.  
+Para se visualizar a informação relativa à meteorologia numa determinada cidade tem que se selecionar mode, escrever City, escrever o nome da cidade (exemplo: Vila de Conde) no notepad e depois fazer Publish.  
+
+
+Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel.  
+
+<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />
 
 
