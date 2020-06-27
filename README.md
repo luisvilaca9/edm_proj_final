@@ -6,7 +6,6 @@ Utilizaram-se 3 modos: mode beach, mode time e mode City. Com base no mode City 
 ### Pré-requesitos
 Instalação do micropy no Visual Studio Code  
 Instalação do broker Mosquitto  
-Ter uma placa esp32 com  ligação a 3 leds e 2 botões  
 Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 * Windows/Mac OSX/Linux [MQTT.fx](http://www.mqttfx.org/)
 * Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
