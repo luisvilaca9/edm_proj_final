@@ -9,5 +9,4 @@ Instalação do broker Mosquitto
 Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 * Windows/Mac OSX/Linux [MQTT.fx](http://www.mqttfx.org/)
 * Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
-* IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)
-Ter uma placa esp32 com  ligação a 3 leds e 2 botões
+* IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  Ter uma placa esp32 com  ligação a 3 leds e 2 botões
