@@ -32,6 +32,7 @@ Na página do Publish deve obter o seguinte:
 #### <strong>mode City</strong>
 Para se visualizar a informação relativa à meteorologia numa determinada cidade tem que se selecionar mode, escrever City, escrever o nome da cidade (exemplo: Vila de Conde) no notepad e depois fazer Publish.  
 
+<img src="https://user-images.githubusercontent.com/65592500/85932447-2ad62700-b8c4-11ea-865b-dd73b5c3d15b.png" width="700" height="400" />  
 
 Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima a temperatura mínima e a pressão atmosférica.
 
