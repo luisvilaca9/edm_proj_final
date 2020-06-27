@@ -22,5 +22,6 @@ Na zona do Publish, na parte maior representada a cor branca, carrega-se no bot√
 Na p√°gina do Publish deve obter o seguinte:  
 
 
-![MQTT Publish](https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png | width=100)
+![MQTT Publish](https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png)
   
+ <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="200">
