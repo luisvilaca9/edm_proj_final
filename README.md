@@ -15,5 +15,6 @@ Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, deverá ter acesso a todos os códigos desenvolividos ao longo do projeto.  
 <strong>Nota:</strong> Antes de correr os programas deverá ter o cuidado de alterar o SSID e a password, no ficheiro Secrets.py, consoante a rede wi-fi que estiver a utilizar e ter ainda o cuidado de selecionar a porta COM adequada a qual a sua placa ESP32 estará conetada, no ficheiro pymakr.conf.
 
-De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.
+De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
+Ao abrir esse programa deverá colocoar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='passwd'
   
