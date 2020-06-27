@@ -21,7 +21,4 @@ De seguida, no Subscribe escreve-se Info no espaço a branco antes do Subscribe 
 Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o mode.  
 Na página do Publish deve obter o seguinte:  
 
-
-![MQTT Publish](https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png)
-  
  <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="200">
