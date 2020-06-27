@@ -18,7 +18,7 @@ Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Stu
 De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
 Ao abrir esse programa deverá colocar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível se conetar ao broker.
 De seguida, no Subscrive escreve-se Info no espaço a branco antes do Subscrive e depois carrega-se no botão localizado à frente no Subscrive.
-Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o mode.
-
+Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o mode.  
+Na página do Publish deve obter o seguinte:
 ![MQTT Publish](https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png)
   
