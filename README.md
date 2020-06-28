@@ -36,6 +36,11 @@ Para se visualizar a informação relativa à meteorologia numa determinada cida
 
 Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima a temperatura mínima e a pressão atmosférica.
 
-<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />
+<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />  
+
+#### <strong>mode time</strong>  
+Este modo consiste na verificação do período do dia em que uma cidade se encontra através da visualização do led verde aceso quando o dia está entre o nascer do sol e o pôr do sol e de um led amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia na placa ESP32.  
+
+
 
 
