@@ -41,7 +41,14 @@ Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do
 #### <strong>Mode time</strong>  
 Este modo consiste na verificação do período do dia em que uma cidade se encontra através da visualização do led verde aceso quando o dia está entre o nascer do sol e o pôr do sol e de um led amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia na placa ESP32.  
 
-Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da form explicada anteriormente tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever o time e depois carregar no botão do Publish.  
+Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever o time e depois carregar no botão do Publish.  
+
+<img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" weight="400" />  
+
+Na placa deverá obrer o led aceso consoante a altura do dia indicado.  
+A título exemplificativo fica esta imagem da placa:  
+
+
 
 
 
