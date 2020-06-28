@@ -50,7 +50,7 @@ A título exemplificativo fica esta imagem da placa:
 
 <img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" weight="400" />  
 
-Por esta imagem percebe-se que no local selecionado encontra-se de dia.
+Por esta imagem percebe-se que no local selecionado é de dia.
 
 
 
