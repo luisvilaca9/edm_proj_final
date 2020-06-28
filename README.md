@@ -45,7 +45,7 @@ Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade p
 
 <img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" weight="400" />  
 
-Na placa deverá obrer o led aceso consoante a altura do dia indicado.  
+Na placa deverá obter o led aceso consoante a altura do dia indicado.  
 A título exemplificativo fica esta imagem da placa:  
 
 <img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" weight="400" />  
