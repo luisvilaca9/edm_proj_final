@@ -1,7 +1,7 @@
 # <strong>Projeto Final de Eletrónica Digital e Microprocessadores</strong>  
 <p>Este projeto consiste na utilização de 3 <i>Application Programming Interface</i>, nomeadamente, a API do <i>World Time</i>, a API do <i>OpenWeather</i> e a API do index ultravioleta que também pertence ao Open Weather.  
 O intuito deste projeto é retirar os dados do formato <i>json</i> destes API de modo a podermos determinar diferentes modos consoante os parâmetros pré-selecionados.  
-  Utilizaram-se 3 modos: mode <strong>beach</strong>, mode <strong>time</strong> e mode <strong>City</strong>. Com base no mode <strong>City</strong> podemos escolher a cidade pretendida e obter o tempo meteorológico nesse mesmo instante. O mode <strong>time</strong> permite indicar se numa cidade selecionda já houve o nascer do sol ou o pôr do sol. Por último existe o mode <strong>beach</strong> que permite sabermos se uma ida à praia nesse dia é adequada ou não.</p>
+  Utilizaram-se 3 modos: Mode <strong>beach</strong>, Mode <strong>time</strong> e Mode <strong>City</strong>. Com base no Mode <strong>City</strong> podemos escolher a cidade pretendida e obter o tempo meteorológico nesse mesmo instante. O Mode <strong>time</strong> permite indicar se numa cidade selecionda já houve o nascer do sol ou o pôr do sol. Por último existe o Mode <strong>beach</strong> que permite sabermos se uma ida à praia nesse dia é adequada ou não.</p>
                    
 ### <strong>Pré-requesitos</strong>
 Instalação do micropy no Visual Studio Code  
@@ -29,7 +29,7 @@ Na página do Publish deve obter o seguinte:
 <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />  
 
 ### <strong>Execução prática dos modos</strong>
-#### <strong>mode City</strong>
+#### <strong>Mode City</strong>
 Para se visualizar a informação relativa à meteorologia numa determinada cidade tem que se selecionar mode, escrever City, escrever o nome da cidade (exemplo: Vila de Conde) no notepad e depois fazer Publish.  
 
 <img src="https://user-images.githubusercontent.com/65592500/85932447-2ad62700-b8c4-11ea-865b-dd73b5c3d15b.png" width="700" height="400" />  
@@ -38,8 +38,10 @@ Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do
 
 <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />  
 
-#### <strong>mode time</strong>  
+#### <strong>Mode time</strong>  
 Este modo consiste na verificação do período do dia em que uma cidade se encontra através da visualização do led verde aceso quando o dia está entre o nascer do sol e o pôr do sol e de um led amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia na placa ESP32.  
+
+Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da form explicada anteriormente tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever o time e depois carregar no botão do Publish.  
 
 
 
