@@ -16,7 +16,7 @@ Depois da instalação dos programas referidos em cima, deve-se ir ao Visual Stu
 <strong>Nota:</strong> Antes de correr os programas deverá ter o cuidado de alterar o SSID e a password, no ficheiro Secrets.py, consoante a rede wi-fi que estiver a utilizar e ter ainda o cuidado de selecionar a porta COM adequada a qual a sua placa ESP32 estará conetada, no ficheiro pymakr.conf.
 
 De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
-Ao abrir esse programa deverá colocar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível se conetar ao broker.
+Ao abrir esse programa deverá colocar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível se conectar ao broker.
 De seguida, no Subscribe escreve-se Info no espaço a branco antes do Subscribe e depois carrega-se no botão localizado à frente no Subscribe.
 Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o mode.  
 
@@ -39,7 +39,7 @@ Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do
 <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />  
 
 #### <strong>Mode time</strong>  
-Este modo consiste na verificação do período do dia em que uma cidade se encontra através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia na placa ESP32.  
+Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia, na placa ESP32.  
 
 Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever o time e depois carregar no botão do Publish.  
 
