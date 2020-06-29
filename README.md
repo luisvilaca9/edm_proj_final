@@ -65,6 +65,8 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 Para se visualizar o LED aceso na placa, no modo praia, tem de se subscrever o bloco Info, escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever beach e depois carregar no botão do Publish.  
 No Visual Studio Code deve aparecer algo semelhante a esta imagem:  
 
+<img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="700" weight="400" />
+
 
 
 
