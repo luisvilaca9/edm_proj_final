@@ -62,8 +62,10 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 * <strong>LED amarelo:</strong> 10<=count<13
 * <strong>LED verde:</strong> 13<=count<=16  
 
+<strong>Nota:</strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão direito do circuito.  
+
 Para se visualizar o LED aceso na placa, no modo praia, tem de se subscrever o bloco Info, escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever beach e depois carregar no botão do Publish.  
-No Visual Studio Code deve aparecer algo semelhante a esta imagem:  
+No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
 
 <img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="700" height="400" />
 
