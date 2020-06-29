@@ -36,19 +36,19 @@ Para se visualizar a informação relativa à meteorologia numa determinada cida
 
 Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima a temperatura mínima e a pressão atmosférica.
 
-<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" weight="400" />  
+<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />  
 
 #### <strong>Mode time</strong>  
 Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia, na placa ESP32.  
 
 Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever time e depois carregar no botão do Publish.  
 
-<img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" weight="400" />  
+<img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" height="400" />  
 
 Na placa deverá obter o LED aceso consoante a altura do dia indicado.  
 A título exemplificativo fica esta imagem da placa:  
 
-<img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" weight="400" />  
+<img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" height="400" />  
 
 Por esta imagem percebe-se que no local selecionado é de dia.  
 
@@ -65,7 +65,7 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 Para se visualizar o LED aceso na placa, no modo praia, tem de se subscrever o bloco Info, escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever beach e depois carregar no botão do Publish.  
 No Visual Studio Code deve aparecer algo semelhante a esta imagem:  
 
-<img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="700" weight="400" />
+<img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="700" height="400" />
 
 
 
