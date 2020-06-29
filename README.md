@@ -50,7 +50,17 @@ A título exemplificativo fica esta imagem da placa:
 
 <img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" weight="400" />  
 
-Por esta imagem percebe-se que no local selecionado é de dia.
+Por esta imagem percebe-se que no local selecionado é de dia.  
+
+#### <strong>Mode beach</strong>
+Este modo consiste na visualização de um LED, na placa ESP32, indicativo do estado de tempo de modo a viabilizar uma ida à praia ou não. Para isso, recorre-se aos parâmetros da temperatura atual, da velocidade do vento, do índice ultravioleta e a humidade. Cada parâmetro encontra-se quantificado no código main.py de 1 (estado pior) a 4( condição ideal).  
+<strong>Nota:</strong>Os intervalos escolhidos para os critérios tem por base a informação presente na bibliografia.  
+
+A soma dos 4 parâmetros vai definir os estados do LED:  
+* <strong>LED vermelho:</strong> 4<=count<7;
+* <strong>LED amarelo no modo intermitente:</strong> 7<=count<10;
+* <strong>LED amarelo:</strong> 10<=count<13
+* <strong>LED verde:</strong> 13<=count<=16
 
 
 
