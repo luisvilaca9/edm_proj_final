@@ -91,6 +91,7 @@ def beach():
         while True:
             yellow.blink(500)
             if bleft.state() == 1:
+                leds_off()
                 break
                 
     elif count >= 10 and count < 13:
