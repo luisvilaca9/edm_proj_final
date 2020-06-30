@@ -71,7 +71,11 @@ No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, 
 
 <img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />  
 
+Por último, para terminar o funcionamento do código global é necessário carregar no botão esquerdo do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
 
+
+### <strong>Conclusão</strong>  
+<p>Este projeto permitiu consolidar as bases no Micropy e aprender a utilizar a funcionalidade Wi-fi da placa de modo a poder interagir com diversas API.  Também permitiu tirar partido dos LEDs e botões do circuito ligado à placa e das API de modo a ser possível a criação deste código que fornece uma panóplia de informação ao seu utilizador, consoante o efeito pretendido. O código descrito é versátil podendo o seu utilizador futuro fazer alterações de acordo o seu gosto pessoal (nomeadamente no Mode beach). Em suma, os objetivos deste trabalho foram cumpridos.</p>
 
 
 ### <strong>Autores</strong>  
