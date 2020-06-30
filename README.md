@@ -84,8 +84,8 @@ Luís Miguel de Sá Vilaça
 ### <strong>Bibliografia</strong>  
 [Link para o Ipma](https://www.ipma.pt/pt/educativa/faq/meteorologia/previsao/faqdetail.html?f=/pt/educativa/faq/meteorologia/previsao/faq_0032.html)  
 [link para a API do índice ultravioleta](https://openweathermap.org/api/uvi#current)  
-[link para a API do OpenWeather](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwxev3BRBBEiwAiB_PWNLlnx1aMDdf5oOwvEuOlTt6Lu5DAMMu-sp7PMyc9PzAAbbG4qwSWhoCRKQQAvD_BwE)
-[link para a API do World Time]
+[link para a API do OpenWeather](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwxev3BRBBEiwAiB_PWNLlnx1aMDdf5oOwvEuOlTt6Lu5DAMMu-sp7PMyc9PzAAbbG4qwSWhoCRKQQAvD_BwE)  
+[link para a API do World Time](http://worldtimeapi.org/)  
 [link realacionado com a humidade relativa](https://pt.wikipedia.org/wiki/Umidade_relativa)
 
 
