@@ -62,7 +62,7 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 * <strong>LED amarelo: </strong> 10<=count<13
 * <strong>LED verde: </strong> 13<=count<=16  
 
-<strong>Nota:</strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão direito do circuito.  
+<strong>Nota:</strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão esquerdo do circuito.  
 
 Primeiramente, para se visualizar o LED aceso na placa, no modo praia, tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
 Seguidamente, ir ao Publish, escrever no tópico a palavra mode , na mensagem escrever o modo beach e depois carregar no botão do Publish.  
@@ -71,7 +71,7 @@ No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, 
 
 <img src="https://user-images.githubusercontent.com/65592500/86066281-a7563a80-ba69-11ea-81de-1517cb72c12e.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />  
 
-Por último, para terminar o funcionamento do código global é necessário carregar no botão esquerdo do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
+Por último, para terminar o funcionamento do código global é necessário carregar no botão direito do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
 
 
 ### <strong>Conclusão</strong>  
