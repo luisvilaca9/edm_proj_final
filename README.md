@@ -80,7 +80,9 @@ Por último, para terminar o funcionamento do código global é necessário carr
 
 ### <strong>Autores</strong>  
 André João Fernandes Aguiar  
-Luís Miguel de Sá Vilaça
+Luís Miguel de Sá Vilaça  
+### <strong>Bibliografia</strong>  
+
 
 
 
