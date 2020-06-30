@@ -73,8 +73,8 @@ No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, 
 
 
 ### <strong>Autores<strong />  
-  André João Fernandes Aguiar  
-  Luís Miguel de Sá Vilaça
+André João Fernandes Aguiar  
+Luís Miguel de Sá Vilaça
 
 
 
