@@ -29,12 +29,12 @@ Na página do Publish deve obter o seguinte:
 <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />  
 
 ### <strong>Execução prática dos modos</strong>
-#### <strong>Mode City</strong>
-Para se visualizar a informação relativa à meteorologia numa determinada cidade tem que se selecionar mode, escrever City, escrever o nome da cidade (exemplo: Vila de Conde) no notepad e depois fazer Publish.  
+#### <strong>Mode City</strong>  
+Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco info, carregar em City e na mensagem digitar o nome do local desejado. Posteriormente deve-se carregar no botão Publish.  
 
-<img src="https://user-images.githubusercontent.com/65592500/85932447-2ad62700-b8c4-11ea-865b-dd73b5c3d15b.png" width="700" height="400" />  
+<img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
 
-Seguidamente vai-se ao Subscribe, onde se escreve info e carrega-se no botão do Subscribe, fazendo com que a informação pretendida apareça nesse painel. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima a temperatura mínima e a pressão atmosférica.
+Seguidamente vai-se ao Subscribe, onde a informação climatérica do local pode ser visualizada em Info, no painel do broker. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima a temperatura mínima e a pressão atmosférica.
 
 <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />  
 
