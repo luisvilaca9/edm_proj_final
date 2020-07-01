@@ -10,7 +10,7 @@ from machine import unique_id, reset
 from led import Led
 from button import Button
 
-# Associar botões e LEDs aos pins e utilizando classes dos ficheiros button.py e led.py
+# Associação dos botões e LEDs aos respetivos Pins. Utilização de classes importadas dos ficheiros button.py e led.py
 bleft = Button(23)
 bright = Button(18)
 green = Led(19)
