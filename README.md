@@ -1,7 +1,7 @@
 # <strong>Projeto Final de Eletrónica Digital e Microprocessadores</strong>  
 <p>Este projeto consiste na utilização de 3 <i>Application Programming Interface</i>, nomeadamente, a API do <i>World Time</i>, a API do <i>OpenWeather</i> e a API do index ultravioleta que também pertence ao Open Weather.  
-O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's de forma ser pssível a determinação de diferentes modos consoante os parâmetros pré-selecionados.  
-  Ciaram-se para o efeito 3 modos: Mode <strong>beach</strong>, Mode <strong>time</strong> e Mode <strong>City</strong>. Com base no Mode <strong>City</strong> podemos escolher a cidade pretendida e obter o tempo meteorológico nesse mesmo instante. O Mode <strong>time</strong> permite indicar se numa cidade selecionada já houve o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>beach</strong> que permite sabermos se uma ida à praia nesse dia é adequada ou não.</p>
+O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's de forma a ser possível a determinação de diferentes modos consoante os parâmetros pré-selecionados.  
+  Criaram-se para o efeito 3 modos: Mode <strong>beach</strong>, Mode <strong>time</strong> e Mode <strong>City</strong>. Com base no Mode <strong>City</strong> podemos escolher a cidade pretendida e obter a informação metereológica nesse mesmo instante. O Mode <strong>time</strong> permite indicar se numa cidade selecionada já ocorreu o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>beach</strong> que permite saber se uma ida à praia nesse dia é adequada ou não.</p>
                    
 ### <strong>Pré-requesitos</strong>
 Instalação do micropy no Visual Studio Code  
@@ -16,9 +16,9 @@ Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studi
 <strong>Nota:</strong> Antes de correr os programas deverá ter o cuidado de alterar o SSID e a password, no ficheiro Secrets.py, consoante a rede wi-fi que estiver a utilizar, bem como, selecionar a porta COM que deverá estar conetada à sua placa ESP32, no ficheiro pymakr.conf.
 
 De seguida deve abrir o programa que pemite subscrever/publicar mensagens MQTT.  
-Ao abrir esse programa deverá colocar o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível se conectar ao broker.
+Ao abrir esse programa deverá adicionar um novo servidor, colocando o mqtt_server = ‘edm2020.ddns.net’, mqtt_user = ‘edm’ e a mqtt_pass='M0squit0'. Deste modo já é possível a conexão ao broker.
 De seguida, no Subscribe escreve-se Info no espaço a branco antes do Subscribe e depois carrega-se no botão localizado à frente no Subscribe.
-Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o mode.  
+Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o Mode.  
 
 Na página do Subscribe deve obter o seguinte:  
 
@@ -28,9 +28,9 @@ Na página do Publish deve obter o seguinte:
 
 <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />  
 
-### <strong>Execução prática dos modos</strong>
-#### <strong>Mode City</strong>  
-Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco Info, carregar em City e na mensagem digitar o nome do local desejado. Posteriormente deve-se carregar no botão Publish.  
+### <strong>Execução prática do programa</strong>
+#### <strong>City</strong>  
+Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco Info, carregar em City e na caixa de mensagem digitar o nome do local desejado. Posteriormente deve-se carregar no botão Publish.  
 
 <img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
 
@@ -38,10 +38,10 @@ Seguidamente vai-se ao Subscribe, onde a informação climatérica do local pode
 
 <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />  
 
-#### <strong>Mode time</strong>  
+#### <strong>Mode - Time</strong>  
 Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia, na placa ESP32.  
 
-Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, escrever Mode, no notepad escrever time e depois carregar no botão do Publish.  
+Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, no notepad escrever 'time' (não sensível a capitalização) e depois carregar em Publish.  
 
 <img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" height="400" />  
 
@@ -52,8 +52,8 @@ A título exemplificativo fica esta imagem da placa:
 
 Por esta imagem percebe-se que no local selecionado é de dia.  
 
-#### <strong>Mode beach</strong>
-Este modo consiste na visualização de um LED, na placa ESP32, indicativo do estado de tempo de modo a viabilizar uma ida à praia. Para isso, recorre-se aos parâmetros da temperatura atual, da velocidade do vento, do índice ultravioleta e a humidade relativa do ar. Cada parâmetro encontra-se quantificado no código main.py de 1 (estado pior) a 4 (condição ideal).  
+#### <strong>Mode - Beach</strong>
+Este modo consiste na visualização de um LED, na placa ESP32, indicativo do estado de tempo de modo a viabilizar uma ida à praia. Para isso, recorre-se aos parâmetros da temperatura atual, da velocidade do vento, do índice ultravioleta e a humidade relativa do ar. Cada parâmetro encontra-se quantificado no código main.py de 1 (pior estado) a 4 (condição ideal).  
 
 <strong>Nota:</strong> Os intervalos escolhidos para os critérios tem por base a informação presente na bibliografia.  
 
@@ -65,8 +65,8 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 
 <strong>Nota: </strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão esquerdo do circuito.  
 
-Primeiramente, para se visualizar o LED aceso na placa, no modo praia, tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
-Seguidamente, ir ao Publish, escrever no tópico a palavra mode, na mensagem escrever o modo beach e depois carregar no botão do Publish.  
+Primeiramente, para se visualizar o LED aceso na placa, no modo 'Beach', tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
+Seguidamente, ir ao Publish, carregar em Mode, na caixa de mensagem escrever 'Beach' (não sensível a capitalização) e depois carregar em Publish.  
 
 No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
 
@@ -76,7 +76,7 @@ Por último, para terminar o funcionamento do código global é necessário carr
 
 
 ### <strong>Conclusão</strong>  
-<p>Este projeto permitiu consolidar as bases no Micropy e aprender a utilizar a funcionalidade Wi-fi da placa de modo a poder interagir com diversas API's.  Também permitiu tirar partido dos LEDs e botões do circuito ligado à placa e das API's de modo a ser possível a criação deste código que fornece uma panóplia de informação ao seu utilizador, consoante o efeito pretendido. O código descrito é versátil podendo cada utilizador futuro fazer alterações de acordo com o seu gosto pessoal (nomeadamente no Mode beach). Em suma, os objetivos deste trabalho foram cumpridos.</p>
+<p>Este projeto permitiu consolidar as bases do Micropy e aprender a utilizar a funcionalidade Wi-fi da placa de modo a poder interagir com diversas API's.  Também permitiu tirar partido dos LEDs e botões do circuito ligados à placa e das API's de modo a ser possível a criação deste código que fornece uma panóplia de informação ao seu utilizador, consoante o efeito pretendido. O código descrito é versátil podendo cada utilizador futuro fazer alterações de acordo com o seu gosto pessoal (nomeadamente no Mode 'Beach'). Em suma, os objetivos deste trabalho foram cumpridos.</p>
 
 
 ### <strong>Autores</strong>  
