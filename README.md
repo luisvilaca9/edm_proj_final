@@ -1,7 +1,7 @@
 # <strong>Projeto Final de Eletrónica Digital e Microprocessadores</strong>  
 <p>Este projeto consiste na utilização de 3 <i>Application Programming Interface</i>, nomeadamente, a API do <i>World Time</i>, a API do <i>OpenWeather</i> e a API do index ultravioleta que também pertence ao Open Weather.  
 O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's de forma a ser possível a determinação de diferentes modos consoante os parâmetros pré-selecionados.  
-  Criaram-se para o efeito 2 modos: Mode <strong>beach</strong>, Mode <strong>time</strong>, e um tópico <strong>City</strong> que permite selecionar o local desejado. Em City podemos escolher a cidade pretendida e obter a informação metereológica nesse mesmo instante. O Mode <strong>time</strong> permite indicar se numa cidade selecionada já ocorreu o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>beach</strong> que permite saber se uma ida à praia nesse dia é adequada ou não.</p>
+  Criaram-se para o efeito 2 modos; Mode <strong>Beach</strong>, Mode <strong>Time</strong> e um tópico <strong>City</strong>. Em <strong>City</strong> podemos escolher a cidade pretendida e obter a informação metereológica nesse mesmo instante. O Mode <strong>Time</strong> permite indicar se numa cidade selecionada já ocorreu o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>Beach</strong> que permite saber se uma ida à praia nesse dia é adequada ou não.</p>
                    
 ### <strong>Pré-requesitos</strong>
 Instalação do micropy no Visual Studio Code  
