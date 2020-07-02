@@ -112,6 +112,7 @@ def beach():
 
 def temp_count(temp):
     """Avalia temperatura ideal para um dia de praia, de 1 a 4 pontos"""
+    print("temperatura=", temp)
     if temp > 33 or temp < 18:
         count = 1
     elif temp >= 18 and temp <= 23:
@@ -124,6 +125,7 @@ def temp_count(temp):
 
 def wind_count(speed):
     """Avalia velocidade do vento ideal para um dia de praia, de 1 a 4 pontos"""
+    print("velocidade do vento=", speed)
     if speed >= 5.55:
         count = 1
     elif speed < 5.55 and speed >= 3.61:
@@ -141,7 +143,7 @@ def uv_count(lat, lon):
     r = urequests.get(url).json() # Ficheiro JSON do API mencionado anteriormente
     # prettify(dumps(r))
     value = r['value'] # Valor do índice de UVs incidente no local selecionado
-
+    print("índice UV=", value)
     if value >= 10:
         count = 1
     elif value >= 8 and value < 10:
@@ -154,6 +156,7 @@ def uv_count(lat, lon):
 
 def humidity_count(humidity):
     """Função que avalia as condições de humidade para um dia de praia e retorna uma pontuação entre 1 e 4"""
+    print("humidade relativa do ar=", humididy)
     if humidity >= 80 and humidity <= 15:
         count = 1
     elif humidity > 15 and humidity <= 30 or humidity >= 70 and humidity < 80:
