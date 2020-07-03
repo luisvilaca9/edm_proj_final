@@ -96,9 +96,10 @@ def beach():
     # Consoante a pontuação das várias variáveis mencionadas anteriormente, é acendido o respetivo LED
     # Numa escala de melhores para piores condições, acender: LED Verde, LED Amarelo, LED Amarelo em modo intermitente, LED Vermelho
     if count >= 4 and count < 7:
+        print("Alerta vermelho!, "Pontuação total =", count)
         red.state(True)
     elif count >= 7 and count < 10:
-        print("Press the left button to terminate intermitent mode.") # Mensagem explicativa para terminar o modo amarelo intermitente
+        print("Não recomendado", "Press the left button to terminate intermitent mode.", "Pontuação total =", count) # Mensagem explicativa para terminar o modo amarelo intermitente
         while True: # Loop para modo amarelo intermitente
             yellow.blink(500) # Função da classe LED para o modo intermitente. Como argumento assume o periodo em ms para ligar e desligar o LED.
             if bleft.state() == 1: # Premir botão esquerdo para terminar modo intermitente
@@ -106,13 +107,14 @@ def beach():
                 break
                 
     elif count >= 10 and count < 13:
+        print("Condições estávies!", "Pontuação total =", count)      
         yellow.state(True)
     else:
+        print("Condições ideais!", "Pontuação total =", count)
         green.state(True)
 
 def temp_count(temp):
     """Avalia temperatura ideal para um dia de praia, de 1 a 4 pontos"""
-    print("temperatura=", temp)
     if temp > 33 or temp < 18:
         count = 1
     elif temp >= 18 and temp <= 23:
@@ -121,11 +123,11 @@ def temp_count(temp):
         count = 3
     else:
         count = 4
+    print("Pontuação da temperatura=", count, " valor =", temp, "C")
     return count
 
 def wind_count(speed):
     """Avalia velocidade do vento ideal para um dia de praia, de 1 a 4 pontos"""
-    print("velocidade do vento=", speed)
     if speed >= 5.55:
         count = 1
     elif speed < 5.55 and speed >= 3.61:
@@ -134,6 +136,7 @@ def wind_count(speed):
         count = 3
     else:
         count = 4
+    print("Pontuação da velocidade do vento=", count, ", valor =", speed, "m/s")    
     return count
 
 def uv_count(lat, lon):
@@ -143,7 +146,6 @@ def uv_count(lat, lon):
     r = urequests.get(url).json() # Ficheiro JSON do API mencionado anteriormente
     # prettify(dumps(r))
     value = r['value'] # Valor do índice de UVs incidente no local selecionado
-    print("índice UV=", value)
     if value >= 10:
         count = 1
     elif value >= 8 and value < 10:
@@ -152,6 +154,7 @@ def uv_count(lat, lon):
         count = 3
     else:
         count = 4
+    print("Pontuação do índice ultravioleta =", count, ", valor =", value)
     return count
 
 def humidity_count(humidity):
@@ -165,6 +168,7 @@ def humidity_count(humidity):
         count = 3
     else:
         count = 4
+    print("Pontuação da humidade relativa do ar=", count, ", valor =", humidity, "%")
     return count
 
 def info():
