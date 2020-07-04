@@ -71,7 +71,7 @@ Seguidamente, ir ao Publish, carregar em Mode, na caixa de mensagem escrever 'Be
 
 No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
 
-<img src="(https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />  
+<img src="https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />  
 
 Por último, para terminar o funcionamento do código global é necessário carregar no botão direito do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
 
