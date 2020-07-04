@@ -177,7 +177,7 @@ def info():
             Temperature: {3} C\n\
             Max Temp: {4} C\n\
             Min Temp: {5} C\n\
-            Humidity: {6}%\n\
+            Humidity: {6} %\n\
             Pressure: {7} hPa\n"\
             .format(r["name"], r["sys"]["country"], r["wind"]["speed"], r["main"]["temp"], r["main"]["temp_max"], r["main"]["temp_min"], r["main"]["humidity"], r["main"]["pressure"])
     client.publish('Info', message) # Publicar no broker a mensagem com tópico Info
