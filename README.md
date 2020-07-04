@@ -67,7 +67,7 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 
 <strong>Nota: </strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão esquerdo do circuito.  
 
-Primeiramente, para se visualizar o LED aceso na placa, no modo 'Beach', tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
+Primeiramente, para se visualizar o LED aceso na placa, no modo <strong>Beach<\strong>, tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
 Seguidamente, ir ao Publish, carregar em Mode, na caixa de mensagem escrever 'Beach' (não sensível a capitalização) e depois carregar em Publish.  
 
 No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
