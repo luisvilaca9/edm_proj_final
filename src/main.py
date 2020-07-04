@@ -62,14 +62,12 @@ def clock_api():
 
 def weather_api():
     """API para obter informações sobre o tempo na localização selecionada"""
-    try:
-        global location # Constante global de location pois irá ser utilizada em várias funções      
-        url = "http://api.openweathermap.org/data/2.5/weather?q={0}&units=metric&appid={1}" .format(location, api_key) # URL para obter informação do tempo consoante a localização
-        r = urequests.get(url).json() # Obter ficheiro JSON do API
-        # prettify(dumps(r))
-        return r
-    except KeyError:
-        print("City not found!")
+    global location # Constante global de location pois irá ser utilizada em várias funções      
+    url = "http://api.openweathermap.org/data/2.5/weather?q={0}&units=metric&appid={1}" .format(location, api_key) # URL para obter informação do tempo consoante a localização
+    r = urequests.get(url).json() # Obter ficheiro JSON do API
+    # prettify(dumps(r))
+    return r
+    
 
 def time():
     """Função do modo Time, liga o LED verde ou amarelo consoante seja de dia ou de noite (nascer do sol, pôr-do-sol)"""
@@ -136,7 +134,7 @@ def wind_count(speed):
         count = 3
     else:
         count = 4
-    print("Wind Speed Score = {0}, Valor = {1} m/s" .format(count, speed))    
+    print("Wind Speed Score = {0}, Value = {1} m/s" .format(count, speed))    
     return count
 
 def uv_count(lat, lon):
@@ -176,14 +174,14 @@ def info():
     # Formatação de uma mensagem com toda a informação climatérica do local
     message = "Weather in location {0}, {1}:\n\
             Wind Speed: {2} m/s\n\
-            Temperature: {3} \u00b0C\n\
-            Max Temp: {4} \u00b0C\n\
-            Min Temp: {5} \u00b0C\n\
+            Temperature: {3} C\n\
+            Max Temp: {4} C\n\
+            Min Temp: {5} C\n\
             Humidity: {6}%\n\
             Pressure: {7} hPa\n"\
             .format(r["name"], r["sys"]["country"], r["wind"]["speed"], r["main"]["temp"], r["main"]["temp_max"], r["main"]["temp_min"], r["main"]["humidity"], r["main"]["pressure"])
     client.publish('Info', message) # Publicar no broker a mensagem com tópico Info
-
+        
 def sub_cb(topic, message):
     """Função para o ESP receber informação a tópicos subscritos no broker"""
     try:
@@ -193,9 +191,9 @@ def sub_cb(topic, message):
         if topic == 'City': # Permite selecionar o local desejado
             location = message.decode("utf-8")
             print("Selected Location: {0}." .format(location)) # Mensagem que mostra o local selecionado através do broker
-            print("See weather info of {0} on the Broker Client." .format(location)) # Mesnagem a avisar que a informaçaõ do tempo sobre o local selecionado pode ser vista no broker
             info() # Execução da função info para publicar informação climatérica no broker
-
+            print("See weather info of {0} on the Broker Client." .format(location)) # Mesnagem a avisar que a informação do tempo sobre o local selecionado pode ser vista no broker
+            
         if topic == 'Mode': # Seleção do modo time ou beach
             global mode
             mode = message.decode("utf-8") # Descodificação da mensagem proveniente do broker que indica o modo escolhido
@@ -204,6 +202,7 @@ def sub_cb(topic, message):
                 time()
             if mode.lower() == 'beach':
                 beach()
+                
     except UnicodeError:
         print("Invalid Location. Remove special characters.")
 
