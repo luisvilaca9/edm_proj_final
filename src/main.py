@@ -136,7 +136,7 @@ def wind_count(speed):
         count = 3
     else:
         count = 4
-    print("Wind Speed Score = {0}, Valor = {1} m/s" .format(count, speed))    
+    print("Wind Speed Score = {0}, Value = {1} m/s" .format(count, speed))    
     return count
 
 def uv_count(lat, lon):
