@@ -51,8 +51,9 @@ A título exemplificativo fica esta imagem da placa:
 
 <img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" height="400" />  
 
-Por esta imagem percebe-se que no local selecionado é de dia.
-O modo <strong>Time</strong> pode ser útil no caso de haver membros familiares noutro fuso horário completamente diferente, e, com um simples clique no Broker, fica-se a saber que altura do dia é nessa zona, e se é a altura ideal para estabelecer algum tipo de ligação. Também pode ser útil no caso de estar longe de casa e querer que a luz acenda para iluminar a entrada de casa (através da sincronização da placa com o sistema de iluminação inteligente de casa).
+Por esta imagem percebe-se que no local selecionado é de dia.  
+
+O modo <strong>Time</strong> pode ser útil no caso de haver membros familiares noutro fuso horário completamente diferente, e, com um simples clique no Broker, fica-se a saber que altura do dia é nessa zona, e se é a altura ideal para estabelecer algum tipo de ligação. Também pode ser útil no caso de estar longe de casa e querer que a luz acenda para iluminar a entrada de casa (através da sincronização da placa com o sistema de iluminação inteligente da habitação).
 
 #### <strong>Mode - Beach</strong>
 Este modo consiste na visualização de um LED, na placa ESP32, indicativo do estado de tempo de modo a viabilizar uma ida à praia. Para isso, recorre-se aos parâmetros da temperatura atual, da velocidade do vento, do índice ultravioleta e a humidade relativa do ar. Cada parâmetro encontra-se quantificado no código main.py de 1 (pior estado) a 4 (condição ideal).  
