@@ -83,7 +83,7 @@ def time():
         yellow.state(True) # Ligar LED amarelo
 
 def beach():
-    """Modo beach que avalia as condições para um dia de praia na localidade selecionada através de um sistema de pontos"""
+    """Modo Beach que avalia as condições para um dia de praia na localidade selecionada através de um sistema de pontos"""
     leds_off()
     r = weather_api() # Informação sobre o tempo 
     count = 0 # Inicializar pontuação em 0
@@ -96,10 +96,10 @@ def beach():
     # Consoante a pontuação das várias variáveis mencionadas anteriormente, é acendido o respetivo LED
     # Numa escala de melhores para piores condições, acender: LED Verde, LED Amarelo, LED Amarelo em modo intermitente, LED Vermelho
     if count >= 4 and count < 7:
-        print("Alerta vermelho!, "Pontuação total =", count)
+        print("Red Alert!", "Total Score = {0}" .format(count))
         red.state(True)
     elif count >= 7 and count < 10:
-        print("Não recomendado", "Press the left button to terminate intermitent mode.", "Pontuação total =", count) # Mensagem explicativa para terminar o modo amarelo intermitente
+        print("Not recommended.", "Press the left button to terminate intermitent mode.", "Total Score =", count) # Mensagem explicativa para terminar o modo amarelo intermitente
         while True: # Loop para modo amarelo intermitente
             yellow.blink(500) # Função da classe LED para o modo intermitente. Como argumento assume o periodo em ms para ligar e desligar o LED.
             if bleft.state() == 1: # Premir botão esquerdo para terminar modo intermitente
@@ -107,10 +107,10 @@ def beach():
                 break
                 
     elif count >= 10 and count < 13:
-        print("Condições estávies!", "Pontuação total =", count)      
+        print("Stable weather!", "Total score =", count)      
         yellow.state(True)
     else:
-        print("Condições ideais!", "Pontuação total =", count)
+        print("Ideal weather!", "Total Score =", count)
         green.state(True)
 
 def temp_count(temp):
@@ -123,7 +123,7 @@ def temp_count(temp):
         count = 3
     else:
         count = 4
-    print("Pontuação da temperatura=", count, " valor =", temp, "C")
+    print("Temperature Score = {0}, Value = {1} \u00b0C" .format(count, temp))
     return count
 
 def wind_count(speed):
@@ -136,7 +136,7 @@ def wind_count(speed):
         count = 3
     else:
         count = 4
-    print("Pontuação da velocidade do vento=", count, ", valor =", speed, "m/s")    
+    print("Wind Speed Score = {0}, Valor = {1} m/s" .format(count, speed))    
     return count
 
 def uv_count(lat, lon):
@@ -154,12 +154,11 @@ def uv_count(lat, lon):
         count = 3
     else:
         count = 4
-    print("Pontuação do índice ultravioleta =", count, ", valor =", value)
+    print("UV Index Score = {0}, Value = {1}" .format(count, value))
     return count
 
 def humidity_count(humidity):
     """Função que avalia as condições de humidade para um dia de praia e retorna uma pontuação entre 1 e 4"""
-    print("humidade relativa do ar=", humididy)
     if humidity >= 80 and humidity <= 15:
         count = 1
     elif humidity > 15 and humidity <= 30 or humidity >= 70 and humidity < 80:
@@ -168,7 +167,7 @@ def humidity_count(humidity):
         count = 3
     else:
         count = 4
-    print("Pontuação da humidade relativa do ar=", count, ", valor =", humidity, "%")
+    print("Relative Humidity Score = {0}, Value = {1}%" .format(count, humidity))
     return count
 
 def info():
@@ -177,9 +176,9 @@ def info():
     # Formatação de uma mensagem com toda a informação climatérica do local
     message = "Weather in location {0}, {1}:\n\
             Wind Speed: {2} m/s\n\
-            Temperature: {3} C\n\
-            Max Temp: {4} C\n\
-            Min Temp: {5} C\n\
+            Temperature: {3} \u00b0C\n\
+            Max Temp: {4} \u00b0C\n\
+            Min Temp: {5} \u00b0C\n\
             Humidity: {6}%\n\
             Pressure: {7} hPa\n"\
             .format(r["name"], r["sys"]["country"], r["wind"]["speed"], r["main"]["temp"], r["main"]["temp_max"], r["main"]["temp_min"], r["main"]["humidity"], r["main"]["pressure"])
@@ -187,23 +186,29 @@ def info():
 
 def sub_cb(topic, message):
     """Função para o ESP receber informação a tópicos subscritos no broker"""
-    print("Received MQTT message: topic '{0}', message '{1}'.".format(topic.decode("utf-8"), message.decode("utf-8"))) #Mesnagem para confirmar recepção da informação do broker
-    topic = topic.decode("utf-8") # Descodificar nome do tópico para utf-8 pois a informação do broker vem em binário
-    global location
-    if topic == 'City': # Permite selecionar o local desejado
-        location = message.decode("utf-8")
-        print("Selected Location: {0}." .format(location)) # Mensagem que mostra o local selecionado através do broker
-        print("See weather info of {0} on the Broker Client." .format(location)) # Mesnagem a avisar que a informaçaõ do tempo sobre o local selecionado pode ser vista no broker
-        info() # Execução da função info para publicar informação climatérica no broker
+    try:
+        print("Received MQTT message: topic '{0}', message '{1}'.".format(topic.decode("utf-8"), message.decode("utf-8"))) #Mesnagem para confirmar recepção da informação do broker
+        topic = topic.decode("utf-8") # Descodificar nome do tópico para utf-8 pois a informação do broker vem em binário
+        global location
+        if topic == 'City': # Permite selecionar o local desejado
+            location = message.decode("utf-8")
+            print("Selected Location: {0}." .format(location)) # Mensagem que mostra o local selecionado através do broker
+            print("See weather info of {0} on the Broker Client." .format(location)) # Mesnagem a avisar que a informaçaõ do tempo sobre o local selecionado pode ser vista no broker
+            info() # Execução da função info para publicar informação climatérica no broker
 
-    if topic == 'Mode': # Seleção do modo time ou beach
-        global mode
-        mode = message.decode("utf-8") # Descodificação da mensagem proveniente do broker que indica o modo escolhido
-        print("Active mode in {0}: {1}" .format(location, mode.upper())) # Confirmação em mensagem no terminal que o modo foi escolhido para certo local
-        if mode.lower() == 'time':
-            time()
-        if mode.lower() == 'beach':
-            beach()
+        if topic == 'Mode': # Seleção do modo time ou beach
+            global mode
+            mode = message.decode("utf-8") # Descodificação da mensagem proveniente do broker que indica o modo escolhido
+            print("Active mode in {0}: {1}" .format(location, mode.upper())) # Confirmação em mensagem no terminal que o modo foi escolhido para certo local
+            if mode.lower() == 'time':
+                time()
+            if mode.lower() == 'beach':
+                beach()
+    except UnicodeError:
+        print("Invalid Location. Remove special characters.")
+
+    except KeyError:
+        print("Location not found. Select another location.")
     
 def connect_and_subscribe():
     """Função para ligar placa ESP ao broker e subscrever a tópicos no broker para receber informação do mesmo"""
