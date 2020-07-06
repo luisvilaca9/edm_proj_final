@@ -12,7 +12,7 @@ Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 * Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
 * IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  
 
-###<strong>Esquema do Hardware</strong>
+### <strong>Esquema do Hardware</strong>
 Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
 <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="505" height="203 />
 
