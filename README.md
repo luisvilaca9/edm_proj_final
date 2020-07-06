@@ -4,12 +4,17 @@ O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's 
   Criaram-se para o efeito 2 modos: Mode <strong>Beach</strong>, Mode <strong>Time</strong>, e um tópico <strong>City</strong>. Em <strong>City</strong> podemos escolher a cidade pretendida e obter a informação metereológica nesse mesmo instante. O Mode <strong>Time</strong> permite indicar se numa cidade selecionada já ocorreu o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>Beach</strong> que permite saber se uma ida à praia nesse dia é adequada ou não.</p>
                    
 ### <strong>Pré-requesitos</strong>
+Microcontrolador ESP32, 2 botões e 3 LEDs (Verde, Amarelo, Vermelho)
 Instalação do micropy no Visual Studio Code  
 Instalação do broker Mosquitto  
 Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 * Windows/Mac OSX/Linux [MQTT.fx](http://www.mqttfx.org/)
 * Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
 * IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  
+
+###<strong>Esquema do Hardware</strong>
+Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
+<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="505" height="203 />
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
