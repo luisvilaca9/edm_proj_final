@@ -4,14 +4,14 @@ O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's 
   Criaram-se para o efeito 2 modos: Mode <strong>Beach</strong>, Mode <strong>Time</strong>, e um tópico <strong>City</strong>. Em <strong>City</strong> podemos escolher a cidade pretendida e obter a informação metereológica nesse mesmo instante. O Mode <strong>Time</strong> permite indicar se numa cidade selecionada já ocorreu o nascer do sol ou o pôr do sol. Por último, existe o Mode <strong>Beach</strong> que permite saber se uma ida à praia nesse dia é adequada ou não.</p>
                    
 ### <strong>Pré-requesitos</strong>
-* Microcontrolador ESP32, 2 botões e 3 LEDs (Verde, Amarelo, Vermelho)
-* Dois condensadores de 100 nF e seis resistências de 1 k<span>&#8486;</span>
-* Instalação do micropy no Visual Studio Code  
-* Instalação do broker Mosquitto  
+* Microcontrolador ESP32, 2 botões e 3 LEDs (Verde, Amarelo, Vermelho);
+* Dois condensadores de 100 nF e seis resistências de 1 k<span>&#8486;</span>;
+* Instalação do micropy no Visual Studio Code;  
+* Instalação do broker Mosquitto;  
 * Instalação de um programa que possa subscrever/publicar mensagens MQTT:
-* Windows/Mac OSX/Linux [MQTT.fx](http://www.mqttfx.org/)
-* Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
-* IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  
+  * Windows/Mac OSX/Linux [MQTT.fx](http://www.mqttfx.org/)
+  * Android [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_PT)
+  * IOS [MQTT Tool](https://apps.apple.com/us/app/mqttool/id1085976398)  
 
 ### <strong>Esquema do Hardware</strong>
 Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
