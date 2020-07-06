@@ -16,12 +16,13 @@ O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's 
 Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
 
 <p align="center"> 
-  <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="400" height="190" />
+  <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="400" height="180" />
 </p>  
 
 Qualquer controlador que seja semelhante ao ESP32 pode ser utilizado para correr este programa, contudo há que ter a devida atenção de mudar no código a enumeração dos pinos dos LEDs e botões caso estas ligações sejam alteradas. No desenvolvimento deste trabalho, as ligações dos LEDs e botões aos pinos da ESP32 foram realizadas consoante o seguinte esquema:
-
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="400" height="190" />   <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" width="400" height="190" />                                                                                                             
+<p align="center">
+  <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="400" height="190" />   <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" width="400" height="190" />
+</p>
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
@@ -35,33 +36,47 @@ Na zona do Publish, na parte maior representada a cor branca, carrega-se no bot�
 
 Na página do Subscribe deve obter o seguinte:  
 
-<img src="https://user-images.githubusercontent.com/65592500/85929077-b2626c80-b8a9-11ea-896a-4cfbfeca3056.png" width="700" height="400" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/85929077-b2626c80-b8a9-11ea-896a-4cfbfeca3056.png" width="700" height="400" />
+</p>
 
 Na página do Publish deve obter o seguinte:  
 
-<img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />
+</p>
 
 ### <strong>Execução prática do programa</strong>
 #### <strong>City</strong>  
 Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco Info, carregar em City e na caixa de mensagem digitar o nome do local desejado. Posteriormente deve-se carregar no botão Publish.  
 
-<img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
+</p>
 
 Seguidamente vai-se ao Subscribe, onde a informação climatérica do local pode ser visualizada em Info, no painel do broker. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima, a temperatura mínima e a pressão atmosférica.
 
-<img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />
+</p>
+
+ 
 
 #### <strong>Mode - Time</strong>  
 Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia, na placa ESP32.  
 
 Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, no notepad escrever 'time' (não sensível a capitalização) e depois carregar em Publish.  
 
-<img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" height="400" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/85958339-c03cee00-b98c-11ea-8b44-238d1636b1a9.png" width="700" height="400" />
+</p>
 
 Na placa deverá obter o LED aceso consoante a altura do dia indicado.  
 A título exemplificativo fica esta imagem da placa:  
 
-<img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" height="400" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/85958499-cf706b80-b98d-11ea-9d4b-d557227cea88.jpg" width="700" height="400" />
+</p>
 
 Por esta imagem percebe-se que no local selecionado é de dia.  
 
@@ -85,7 +100,9 @@ Seguidamente, ir ao Publish, carregar em Mode, na caixa de mensagem escrever 'Be
 
 No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
 
-<img src="https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />
+</p>
 
 Por último, para terminar o funcionamento do código global é necessário carregar no botão direito do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
 
