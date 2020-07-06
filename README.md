@@ -14,7 +14,11 @@ Instalação de um programa que possa subscrever/publicar mensagens MQTT:
 
 ### <strong>Esquema do Hardware</strong>
 Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png">
+<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="379" height="153" />
+
+Qualquer controlador que seja semelhante ao ESP32 pode ser utilizado para correr este programa, contudo há que ter a devida atenção de mudar no código a enumeração dos pinos dos LEDs e botões caso estas ligações sejam alteradas. No desenvolvimento deste trabalho, as ligações dos LEDs e botões aos pinos da ESP32 foram realizadas consoante o seguinte esquema:
+
+
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
