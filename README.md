@@ -108,7 +108,7 @@ No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, 
   <img src="https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />
 </p>
 
-Por último, para encerrar o prgorama é necessário carregar no botão direito do circuito ligado à placa ESP32. O encerramento do programa também pode ser feito através de Ctrl-C no Visual Studio Code.
+Por último, para encerrar o programa é necessário carregar no botão direito do circuito ligado à placa ESP32. O encerramento do programa também pode ser feito através de Ctrl-C no Visual Studio Code.
 
 
 ### <strong>Conclusão</strong>  
