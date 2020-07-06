@@ -93,10 +93,10 @@ def beach():
 
     # Consoante a pontuação das várias variáveis mencionadas anteriormente, é acendido o respetivo LED
     # Numa escala de melhores para piores condições, acender: LED Verde, LED Amarelo, LED Amarelo em modo intermitente, LED Vermelho
-    if count >= 4 and count < 7:
+    if count >= 4 and count < 8:
         print("Red Alert!", "Total Score = {0}" .format(count))
         red.state(True)
-    elif count >= 7 and count < 10:
+    elif count >= 8 and count < 12:
         print("Not recommended.", "Press the left button to terminate intermitent mode.", "Total Score =", count) # Mensagem explicativa para terminar o modo amarelo intermitente
         while True: # Loop para modo amarelo intermitente
             yellow.blink(500) # Função da classe LED para o modo intermitente. Como argumento assume o periodo em ms para ligar e desligar o LED.
@@ -104,7 +104,7 @@ def beach():
                 yellow.state(False)  # Desliga LED Amarelo
                 break
                 
-    elif count >= 10 and count < 13:
+    elif count >= 12 and count < 15:
         print("Stable weather!", "Total score =", count)      
         yellow.state(True)
     else:
