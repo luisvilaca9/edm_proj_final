@@ -5,6 +5,7 @@ O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's 
                    
 ### <strong>Pré-requesitos</strong>
 * Microcontrolador ESP32, 2 botões e 3 LEDs (Verde, Amarelo, Vermelho)
+* Dois condensadores de 100nF e seis resistências de 1k<span>&#8486;</span>
 * Instalação do micropy no Visual Studio Code  
 * Instalação do broker Mosquitto  
 * Instalação de um programa que possa subscrever/publicar mensagens MQTT:
