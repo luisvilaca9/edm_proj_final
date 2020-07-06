@@ -115,12 +115,13 @@ Por último, para terminar o funcionamento do código global é necessário carr
 André João Fernandes Aguiar  
 Luís Miguel de Sá Vilaça  
 ### <strong>Bibliografia</strong>  
-[Link para o site do Ipma](https://www.ipma.pt/pt/educativa/faq/meteorologia/previsao/faqdetail.html?f=/pt/educativa/faq/meteorologia/previsao/faq_0032.html)  
-[Link para a API do índice ultravioleta](https://openweathermap.org/api/uvi#current)  
-[Link para a API do OpenWeather](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwxev3BRBBEiwAiB_PWNLlnx1aMDdf5oOwvEuOlTt6Lu5DAMMu-sp7PMyc9PzAAbbG4qwSWhoCRKQQAvD_BwE)  
-[Link para a API do World Time](http://worldtimeapi.org/)  
+[Site do Ipma](https://www.ipma.pt/pt/educativa/faq/meteorologia/previsao/faqdetail.html?f=/pt/educativa/faq/meteorologia/previsao/faq_0032.html)  
+[API do índice ultravioleta](https://openweathermap.org/api/uvi#current)  
+[API do OpenWeather](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwxev3BRBBEiwAiB_PWNLlnx1aMDdf5oOwvEuOlTt6Lu5DAMMu-sp7PMyc9PzAAbbG4qwSWhoCRKQQAvD_BwE)  
+[API do World Time](http://worldtimeapi.org/)  
 [Link informativo acerca da humidade relativa](https://pt.wikipedia.org/wiki/Umidade_relativa)  
-[Link relativo ao índice ultravioleta](https://pt.wikipedia.org/wiki/Índice_ultravioleta)
+[Link relativo ao índice ultravioleta](https://pt.wikipedia.org/wiki/Índice_ultravioleta)  
+[Apontamentos de Eletrónica Digital e Microprocessadores](https://paginas.fe.up.pt/~hsm/docencia/edm/edm-201920/gpio/)
 
 
 
