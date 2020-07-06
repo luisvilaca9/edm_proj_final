@@ -15,11 +15,13 @@ O intuito deste projeto é retirar os dados do formato <i>json</i> destes API's 
 ### <strong>Esquema do Hardware</strong>
 Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo esquema pode ser visualizado na imagem seguinte:
 
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="379" height="153" />
+<p align="center"> 
+  <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ESP32-Pico-Kit-624x252.png" width="400" height="190" />
+</p>  
 
 Qualquer controlador que seja semelhante ao ESP32 pode ser utilizado para correr este programa, contudo há que ter a devida atenção de mudar no código a enumeração dos pinos dos LEDs e botões caso estas ligações sejam alteradas. No desenvolvimento deste trabalho, as ligações dos LEDs e botões aos pinos da ESP32 foram realizadas consoante o seguinte esquema:
 
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="400" height="180" />   <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" width="400" height="230" />                                                                                                             
+<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="400" height="190" />   <img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" width="400" height="190" />                                                                                                             
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
