@@ -19,8 +19,8 @@ Para a execução deste programa foi utilizado o microcontrolador ESP32, cujo es
 
 Qualquer controlador que seja semelhante ao ESP32 pode ser utilizado para correr este programa, contudo há que ter a devida atenção de mudar no código a enumeração dos pinos dos LEDs e botões caso estas ligações sejam alteradas. No desenvolvimento deste trabalho, as ligações dos LEDs e botões aos pinos da ESP32 foram realizadas consoante o seguinte esquema:
 
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="390 height="119" />
-<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" 7>                                                                                                             
+<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2018/04/modulo-624x191.jpg" width="390" height="119" />
+<img src="https://paginas.fe.up.pt/~hsm/wp-content/uploads/2020/04/ledButBoardPins-624x398.png" />                                                                                                             
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
