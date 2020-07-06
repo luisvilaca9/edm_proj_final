@@ -25,7 +25,7 @@ Qualquer controlador que seja semelhante ao ESP32 pode ser utilizado para correr
 </p>
 
 Os LEDs vermelho, amarelo e verde serão ligados respetivamente aos pinos 21, 22 e 19 da placa ESP32. Cada LED é ativo a nível alto devido a uma diferença de tensão que irá provocar uma corrente que atravessa o LED. Cada LED está protegido por uma resistência de 1 k<span>&#8486;</span>  de modo a não queimar.  
-O botão esquerdo será ligado ao pino 23 e o direito ao pino 18. Os botões são ativos ao nível baixo, ou seja, quando o botão é premido, o pino da placa ESP32 correspondente assume o valor 0. Os botões estão também protegidos por resistências de 1 k<span>&#8486;</span>, sendo que para cada um deles existe um condensador de 100 nF, em paralelo, com a resistência como mecanismo de anti-bouncing.
+O botão esquerdo será ligado ao pino 23 e o direito ao pino 18. Os botões são ativos ao nível baixo, ou seja, quando o botão é premido, o pino da placa ESP32 correspondente assume o valor 0. Os botões estão também protegidos por resistências de 1 k<span>&#8486;</span>, sendo que para cada um deles existe um condensador de 100 nF, em paralelo com a resistência, funcionando como mecanismo de anti-bouncing.
 
 ### <strong>Utilização geral do programa</strong>
 Depois da instalação dos programas acima referidos, deve-se ir ao Visual Studio Code, selecionar View, Command Pallete, escrever Git: Clone, e colar o seguinte URL <https://github.com/luisvilaca9/edm_proj_final>. Posto isto, terá acesso a todos os códigos desenvolvidos ao longo do projeto.  
