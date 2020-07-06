@@ -58,7 +58,7 @@ Para receber a informação meteorológica de um determinado local, deve-se inic
   <img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
 </p>
 
-Seguidamente vai-se ao separador Subscribe, onde a informação climatérica do local pode ser visualizada no tópico Info. Esse painel irá conter a velocidade do vento, a temperatura máxima, a temperatura mínima e a pressão atmosférica para o localização selecionada.
+Seguidamente vai-se ao separador Subscribe, onde a informação climatérica do local pode ser visualizada no tópico Info. Esse painel irá conter a velocidade do vento, a temperatura máxima, a temperatura mínima e a pressão atmosférica para a localização selecionada.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />
