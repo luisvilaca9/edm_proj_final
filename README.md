@@ -37,13 +37,13 @@ Ao abrir esse programa deverá adicionar um novo servidor, colocando o mqtt_serv
 De seguida, no Subscribe escreve-se Info no espaço a branco antes do Subscribe e depois carrega-se no botão localizado à frente no Subscribe.
 Na zona do Publish, na parte maior representada a cor branca, carrega-se no botão direito do rato, carrega-se na zona que diz Add to Messages Clipboard, e escreve-se City. Repete-se o mesmo procedimento para o Mode.  
 
-Na página do Subscribe deve obter o seguinte:  
+Na página do Subscribe deve-se obter o seguinte:  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65592500/85929077-b2626c80-b8a9-11ea-896a-4cfbfeca3056.png" width="700" height="400" />
 </p>
 
-Na página do Publish deve obter o seguinte:  
+Na página do Publish deve-se obter o seguinte:  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65592500/85924841-b0d67b80-b88c-11ea-889c-8f598ac8f8a9.png" width="700" height="400" />
@@ -51,13 +51,13 @@ Na página do Publish deve obter o seguinte:
 
 ### <strong>Execução prática do programa</strong>
 #### <strong>City</strong>  
-Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco Info, carregar em City e na caixa de mensagem digitar o nome do local desejado. Posteriormente deve-se carregar no botão Publish.  
+Para receber a informação meteorológica de um determinado local, deve-se inicialmente subscrever o bloco Info, carregar em City e na caixa de mensagem digitar o nome do local desejado. Posteriormente deve-se carregar em Publish.  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65592500/86240494-4168d080-bb99-11ea-909d-a243466c5448.png" width="700" height="400" />
 </p>
 
-Seguidamente vai-se ao Subscribe, onde a informação climatérica do local pode ser visualizada em Info, no painel do broker. Esse painel irá conter a localização, a velocidade do vento, a temperatura máxima, a temperatura mínima e a pressão atmosférica.
+Seguidamente vai-se ao separador Subscribe, onde a informação climatérica do local pode ser visualizada no tópico Info. Esse painel irá conter a velocidade do vento, a temperatura máxima, a temperatura mínima e a pressão atmosférica para o localização selecionada.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65592500/85932653-d2078e00-b8c5-11ea-9d7c-62ec174c0778.png" width="700" height="400" />
@@ -66,7 +66,7 @@ Seguidamente vai-se ao Subscribe, onde a informação climatérica do local pode
  
 
 #### <strong>Mode - Time</strong>  
-Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia, na placa ESP32.  
+Este modo consiste na verificação do período do dia em que uma cidade se encontra, através da visualização do LED verde aceso quando o dia está entre o nascer do sol e o pôr do sol, e de um LED amarelo aceso caso a hora seja posterior ao pôr do sol e anterior ao nascer do novo dia.  
 
 Depois de ter subscrito o bloco Info na parte do Subscribe e escolher a cidade pretendida da forma explicada anteriormente, tem que se ir ao Publish, selecionar Mode, no notepad escrever 'time' (não sensível a capitalização) e depois carregar em Publish.  
 
@@ -83,7 +83,7 @@ A título exemplificativo fica esta imagem da placa:
 
 Por esta imagem percebe-se que no local selecionado é de dia.  
 
-O modo <strong>Time</strong> pode ser útil no caso de haver membros familiares noutro fuso horário completamente diferente, e, com um simples clique no Broker, fica-se a saber que altura do dia é nessa zona, e se é a altura ideal para estabelecer algum tipo de ligação. Também pode ser útil no caso de estar longe de casa e querer que a luz acenda para iluminar a entrada de casa (através da sincronização da placa com o sistema de iluminação inteligente da habitação).
+O modo <strong>Time</strong> pode ser útil no caso de haver membros familiares noutro fuso horário, e com um simples clique no Broker, fica-se a saber que altura do dia é nessa zona, sendo possível avaliar se é a altura ideal para estabelecer algum tipo de ligação. Também pode ser útil no caso de estar longe de casa e querer que a luz acenda para iluminar a entrada de casa (através da sincronização da placa com o sistema de iluminação inteligente da habitação).
 
 #### <strong>Mode - Beach</strong>
 Este modo consiste na visualização de um LED, na placa ESP32, indicativo do estado de tempo de modo a viabilizar uma ida à praia. Para isso, recorre-se aos parâmetros da temperatura atual, da velocidade do vento, do índice ultravioleta e a humidade relativa do ar. Cada parâmetro encontra-se quantificado no código main.py de 1 (pior estado) a 4 (condição ideal).  
@@ -99,7 +99,7 @@ A soma dos 4 parâmetros vai definir os estados do LED:
 <strong>Nota: </strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão esquerdo do circuito.  
 
 Primeiramente, para se visualizar o LED aceso na placa, no modo <strong>Beach</strong>, tem de se subscrever o bloco Info e escolher a cidade pretendida da forma explicada anteriormente.  
-Seguidamente, ir ao Publish, carregar em Mode, na caixa de mensagem escrever 'Beach' (não sensível a capitalização) e depois carregar em Publish.  
+Seguidamente, ir ao separador Publish, carregar em Mode, na caixa de mensagem escrever 'Beach' (não sensível a capitalização) e depois carregar em Publish.  
 
 No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, a estas imagens:  
 
@@ -107,7 +107,7 @@ No Visual Studio Code e na placa deve aparecer algo semelhante, respetivamente, 
   <img src="https://user-images.githubusercontent.com/65592500/86515010-04f1da80-be0e-11ea-9512-f4dfe8613327.png" width="400" height="230" /> <img src="https://user-images.githubusercontent.com/65592500/86067561-0c5f5f80-ba6d-11ea-91dd-99cfd61a4a50.jpg" width="400" height="230" />
 </p>
 
-Por último, para terminar o funcionamento do código global é necessário carregar no botão direito do circuito ligado à placa ESP32 que irá, deste modo, sair do programa.
+Por último, para encerrar o prgorama é necessário carregar no botão direito do circuito ligado à placa ESP32. O encerramento do programa também pode ser feito através de Ctrl-C no Visual Studio Code.
 
 
 ### <strong>Conclusão</strong>  
