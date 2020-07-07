@@ -157,7 +157,7 @@ def uv_count(lat, lon):
 
 def humidity_count(humidity):
     """Função que avalia as condições de humidade para um dia de praia e retorna uma pontuação entre 1 e 4"""
-    if humidity >= 80 and humidity <= 15:
+    if humidity >= 80 or humidity <= 15:
         count = 1
     elif humidity > 15 and humidity <= 30 or humidity >= 70 and humidity < 80:
         count = 2
