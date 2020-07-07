@@ -94,8 +94,8 @@ Este modo consiste na visualização de um LED, na placa ESP32, indicativo do es
 A soma dos 4 parâmetros vai definir os estados do LED:  
 * <strong>LED vermelho: </strong> 4<=count<8;
 * <strong>LED amarelo no modo intermitente: </strong> 8<=count<11;
-* <strong>LED amarelo: </strong> 11<=count<14
-* <strong>LED verde: </strong> 14<=count<=16  
+* <strong>LED amarelo: </strong> 11<=count<14;
+* <strong>LED verde: </strong> 14<=count<=16.  
 
 <strong>Nota: </strong>De referir que para sair do modo amarelo intermitente é necessário carregar no botão esquerdo do circuito.  
 
